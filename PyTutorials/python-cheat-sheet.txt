@@ -1,0 +1,86 @@
+
+JEFFREY ALAN HOUSTON's PYTHON CHEAT SHEET
+
+------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------07/27/2021
+
+Open 'Anaconda Prompt (Anaconda 3)' to open the Anaconda Prompt.  (NOTE: In this tutorial words surrounded by <> require an input without <> surrounding).
+conda install <package name> (if this worked, you're done!)
+
+If this didn't work... use Conda-forge!
+Check https://anaconda.org/ to ensure the package is supported by your platform, and its owner is conda-forge.  (conda-forge helps bridge the gap between Anaconda, and packages).
+
+Then, create a new environment, so you aren't using conda-forge with Conda!
+conda create -n <name> -c conda-forge python=3
+conda activate <name>
+(NOTE:  to deactivate:  conda deactivate)
+
+Install the package you want:
+conda install -c conda-forge <package name>
+Then, install spyder kernels using:
+conda install -c conda-forge spyder-kernels
+DON'T FORGET TO CHANGE INTERPRETER PATH!!! (see below)
+
+
+If this didn't work... use pip!
+You might've gotten error message:  'PackagesNotFoundError:  The following packages are not available from current channels:
+ - <package name>
+
+
+Create a new environment.
+conda create -n <name> python=3
+conda activate <name>
+pip install <package name>
+pip install spyder-kernels
+DON'T FORGET TO CHANGE INTERPRETER PATH!!! (see below)
+
+
+To change interpreter path:
+conda info --envs
+OR conda env list
+Copy this environment's directory path.
+In Spyder, go to Preferences > Python interpreter > Use the following Python interpreter:
+Paste the path in this box and add /bin/python for Mac/Linux, or /python.exe for Windows.  
+
+C:\Users\SBEHJE\Anaconda3\envs\env2\python.exe
+
+THEN RESTART PYTHON USING FILE > RESTART
+
+
+To ensure this directory change worked, go to the console in Spyder and type:
+import sys
+sys.executable
+
+To deactivate the virtual environment, and use the base env:
+conda deactivate
+
+To clone, and delete virtual environments, respectively:
+conda remove --name <name> --all
+
+or its alias:  conda env remove --name <name>
+
+To change the current directory that you're working in:
+cd C:\\Users\\SBEHJE\
+
+------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------07/27/2021
+
+GUIde - Guide for GUI Creation/Development
+
+MUST BE RUNNING AS ADMINISTRATOR IN ANACONDA PROMPT FOR THIS TO WORK!!!
+To install your GUI using PyInstaller, use this:
+
+pyinstaller C:\-A0\temperature-calculator.py --onefile --name Temperature-Calculator --distpath C:\Users\SBEHJE\Desktop --specpath C:\Users\SBEHJE\Desktop --icon C:\Users\SBEHJE\Pictures\calculator.ico --noconsole
+
+
+--specpath C:\Users\SBEHJE\Desktop    This provides a directory leading to the .spec file, which is used to copy specifications/properties such as --onefile, or --name XXX, etc.
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------MM/DD/YYYY
+
+
+
+
+
+
