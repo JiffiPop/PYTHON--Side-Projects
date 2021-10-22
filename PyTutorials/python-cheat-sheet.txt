@@ -70,7 +70,7 @@ GUIde - Guide for GUI Creation/Development
 MUST BE RUNNING AS ADMINISTRATOR IN ANACONDA PROMPT FOR THIS TO WORK!!!
 To install your GUI using PyInstaller, use this:
 
-pyinstaller C:\-A0\temperature-calculator.py --onefile --name Temperature-Calculator --distpath C:\Users\SBEHJE\Desktop --specpath C:\Users\SBEHJE\Desktop --icon C:\Users\SBEHJE\Pictures\calculator.ico --noconsole
+pyinstaller C:\Users\SBEHJE\Documents\GitHub\Python-Practice\temperature-calculator-v2.py --onefile --name Temperature-Calculator --distpath C:\Users\SBEHJE\Desktop --specpath C:\Users\SBEHJE\Desktop --icon C:\Users\SBEHJE\Pictures\calculator.ico --noconsole
 
 
 --specpath C:\Users\SBEHJE\Desktop    This provides a directory leading to the .spec file, which is used to copy specifications/properties such as --onefile, or --name XXX, etc.

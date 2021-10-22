@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-SCHNEEBERGER INTERNAL
-
 This application was created to allow for easier acquisition of the maximum
 resistance, and thus, maximum temperature in the motor during burn in.  It
 also serves as a platform for automating other similar tasks with ease.
@@ -49,7 +47,7 @@ class MainWindow(qtw.QWidget):
         label = qtw.QLabel("SCHNEEBERGER's Temperature Calculator")
         label.setFont(qtg.QFont('Helvetica', 10))
         
-        dateLabel = qtw.QLabel("Last Updated:  08/02/2021")
+        dateLabel = qtw.QLabel("Last Updated:  10/19/2021")
         dateLabel.setFont(qtg.QFont('Helvetica', 8))
         
         # textbox display results

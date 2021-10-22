@@ -1,14 +1,21 @@
 # -*- coding: utf-8 -*-
 """
-SCHNEEBERGER INTERNAL
-
 This application was created to allow for easier acquisition of the maximum
-resistance, and thus, maximum temperature in the motor during burn in.  It
+resistance, and thus, maximum temperature in the motor during burn in. It
 also serves as a platform for automating other similar tasks with ease.
 
 Created by Jeffrey A. Houston on July 27th, 2021
 
+Last updated on October 19th, 2021
 """
+
+# =============================================================================
+# NOTE: To successfully launch the application, the user needs to install the 
+# correct packages, and probably wants to do so in a virtual environment. 
+# This is so  the base environment doesn't get messed up if the user installs 
+# incorrect versions of packages that results in something not working.
+# This would result in the user most likely needing to reinstall Anaconda.
+# =============================================================================
 
 import PyQt5.QtWidgets as qtw
 import PyQt5.QtGui as qtg
@@ -49,7 +56,7 @@ class MainWindow(qtw.QWidget):
         label = qtw.QLabel("SCHNEEBERGER's Temperature Calculator")
         label.setFont(qtg.QFont('Helvetica', 10))
         
-        dateLabel = qtw.QLabel("Last Updated:  08/02/2021")
+        dateLabel = qtw.QLabel("Last Updated:  10/19/2021")
         dateLabel.setFont(qtg.QFont('Helvetica', 8))
         
         # textbox display results
