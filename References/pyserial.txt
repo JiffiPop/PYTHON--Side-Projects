@@ -1,0 +1,12 @@
+Run 'Anaconda Prompt (Anaconda3)' as ADMINISTRATOR
+
+conda activate cenv
+
+
+Check available ports:
+python -m serial.tools.list_ports
+
+
+
+
+

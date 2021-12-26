@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jun 11 12:42:16 2018
+
+@author: jeff
+"""
+
+high=100
+low=1
+mid=50
+guess = "Is your secret number "
+print("Please think of a number between 0 and 100!")
+print("Is", mid, "your secret number?")
+request = input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.")
+while request != 'c':
+    if request == 'h':
+        high = mid
+        mid = int((low+high)/2)
+    elif request == 'l':
+        low = mid
+        mid = int((low+high)/2)
+    else:
+        print("Sorry, I did not understand your input.")
+    print("Is your secret number " + str(mid) + "?")
+    request = input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. ")
+if request == 'c':
+    print("Game over. Your secret number is " + str(mid))

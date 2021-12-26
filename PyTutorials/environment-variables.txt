@@ -1,7 +1,0 @@
-To access Window's environment-variables:  Press Win + R and type in sysdm.cpl
-
-Then, go to advanced, and at the bottom you should see environment variables.
-
-From here, you can add/remove filepaths for environment variables.
-
-The one probably requiring changing is called Path, and is under "system variables" in the bottom box.
