@@ -7,6 +7,10 @@ Created on Sun Dec 26 11:33:27 2021
 """
 
 
+import ee # pip install earthengine-api --upgrade
+ee.Authenticate()
+ee.Initialize()
+
 
 
 

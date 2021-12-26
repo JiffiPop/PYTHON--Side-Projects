@@ -79,16 +79,41 @@ pyinstaller C:\Users\SBEHJE\Documents\GitHub\Python-Practice\temperature-calcula
 --------------------------------------------------------------------------------------------------------------------------12/26/2021
 (ON A MAC)
 
+conda activate earf-eng-env
 conda list -e > requirements.txt
 
-Check these out for creating requirements.txt
+== REFERENCES ==
+https://www.youtube.com/watch?v=LIfLiNh7whs
+https://github.com/google/earthengine-community/blob/master/tutorials/intro-to-python-api-guiattard/index.ipynb
+
+== Check these out for creating requirements.txt ==
 https://stackoverflow.com/questions/50777849/from-conda-create-requirements-txt-for-pip3
 https://docs.python.org/3/tutorial/venv.html
-
 
 You can see virtual environment's path with, OR more importantly the virtual environment's interpreter's path with:  echo $PATH		which python
 
 
+pip install earthengine-api --upgrade
+
+
+
+
+
+conda run jupyter notebook		or		jupyter notebook		or		conda run spyder
+control + C to KeyboardInterrupt (to stop jupyter notebook or spiders)
+
+
+
+
+import ee
+import geemap
+
+Map = geemap.Map()
+
+Map
+
+landcover = ee.Image('USGS/NLCD/NLCD2016').select('landcover')
+Map.addLayer(landcover, {}, 'Landcover Map 2016')
 
 
 
