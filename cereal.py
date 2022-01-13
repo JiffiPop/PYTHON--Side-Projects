@@ -13,7 +13,7 @@ import serial
 # CHECK SERIAL PORT OPEN/CLOSE STATE W/ ser.isOpen()
 
 # Open Serial Port
-ser = serial.Serial('COM4',
+ser = serial.Serial('COM8',
                     baudrate=9600,
                     bytesize=8,
                     parity='N',
@@ -36,6 +36,5 @@ while 1:
     rawData = ser.read()
     if rawData:
         print(rawData)
-    
     
 # ser.close()             # close port

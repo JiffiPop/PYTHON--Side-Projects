@@ -64,7 +64,7 @@ cd C:\\Users\\SBEHJE\
 ------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------07/28/2021
 
-GUIde - Guide for GUI Creation/Development
+GUIde - Export GUI as Executable File (.exe)
 
 MUST BE RUNNING AS ADMINISTRATOR IN ANACONDA PROMPT FOR THIS TO WORK!!!
 To install your GUI using PyInstaller, use this:
