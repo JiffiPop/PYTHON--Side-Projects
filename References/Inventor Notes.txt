@@ -1,0 +1,31 @@
+
+AutoDesk Inventor
+
+========================================================================================================================================
+============================================================================================================================= 12/29/2021
+
+= Design Assistant =
+
+**WHEN CHANGING NAMES, TAKE CARE TO OPEN DRAWINGS IN DESIGN ASSISTANT, TOO. THIS WILL NOT HAPPEN BY DEFAULT WHEN OPENING ASSY.**
+
+To view drawings in Inventor's Design Assistant (DA) (standalone program):
+- Open top-level assy or assy drawing
+- Select all components in top-half of window (double click on assembly to do this)
+- In lower half of window, check all boxes necessary and click 'Find Files'
+
+If individual components cannot be selected to perform 'Rename' action, this is most likely the situation below...
+- Issue:  After loading up an Inventor assembly file into the Design Assistant you cannot rename or copy files as the column is grayed out.
+	Cannot Right click on files to select the Copy or Rename options.
+- Causes:  Not all Inventor part or sub assembly files  have not been migrated to the newer release of Inventor.
+
+- Solution 1:  Save all files in the Assembly file first and select to migrate the all files to the current release of Inventor.
+- Solution 2:  In Design Assistant, change the 'Design State' column's field to anything but 'Released', as the 'Released' state prevents renaming.
+
+To copy components/drawings in DA, follow this video:  https://www.youtube.com/watch?v=segnvgEOZBk
+
+
+========================================================================================================================================
+============================================================================================================================= XX/XX/XXXX
+
+
+
